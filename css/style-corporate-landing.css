@@ -143,18 +143,21 @@ p {
   line-height: 28px;
   font-weight: 400;
 }
+.line-height-l {
+  line-height: 35px;
+}
 h1 {
   font-size: 65px;
   line-height: 90px;
   font-weight: 100;
 }
 h2 {
-  font-size: 35px;
+  font-size: 40px;
   line-height: 52px;
   font-weight: 300;
 }
 h3 {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 42px;
   font-weight: 300;
 }
@@ -486,7 +489,7 @@ h4 {
   margin-top: 50px;
 }
 .header-nav .nav li a {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Exo', sans-serif;
   font-style: normal;
   color: #fff;
   padding: 10px 0px !important;
