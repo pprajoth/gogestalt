@@ -1,0 +1,198 @@
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+p {
+  color: rgba(0, 0, 0, 0.5);
+}
+/**
+ * ===============================
+ *  Section Heading Section Defult Style 
+ * ===============================
+ */
+.section-heading {
+  color: rgba(0, 0, 0, 0.9);
+}
+.section-heading .end-heading {
+  color: #9de6e8;
+}
+.section-header .important {
+  color: #9de6e8;
+}
+.section-header .section-heading-normal {
+  color: rgba(0, 0, 0, 0.8);
+}
+.section-header p {
+  color: rgba(0, 0, 0, 0.5);
+}
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn.btn-fill {
+  background-color: #9de6e8;
+  border-color: #9de6e8;
+}
+.btn.btn-fill:hover {
+  background-color: #5fd6d9 !important;
+  border-color: #5fd6d9 !important;
+}
+.btn.btn-border {
+  border-color: #9de6e8;
+}
+.btn.btn-border:hover {
+  background-color: #9de6e8;
+}
+.btn-text-link a {
+  color: #9de6e8;
+}
+.btn-text-link a:hover {
+  color: #5fd6d9 !important;
+}
+/**
+ * =============================
+ * Form Defult Style
+ * =============================
+ */
+.single-form .input-group .btn:hover {
+  background-color: #5fd6d9 !important;
+}
+.outer-border.single-form .input-group .btn {
+  background-color: #9de6e8;
+}
+.overlay-color {
+  background-color: rgba(47, 48, 52, 0.93);
+}
+/**
+ * ================================
+ * Header Contant Style
+ * ================================
+ */
+/*  Header Contant Style  */
+/*  ====================  */
+.header-background {
+  background-color: rgba(34, 34, 34, 0.99);
+}
+.header .overlay-color {
+  background-color: rgba(47, 48, 52, 0.3);
+}
+.header .overlay-color-video {
+  background-color: rgba(47, 48, 52, 0.3);
+}
+.header-body h1 {
+  color: #000000;
+}
+.header-body .requirement p {
+  color: rgba(0, 0, 0, 0.35);
+}
+.header-body .btn-header {
+  color: #ffffff;
+}
+.header-body .btn-text-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+.header-body .btn {
+  color: #ffffff;
+}
+/**
+ * =============================
+ * EASY FEATURES AVAILABLE 
+ * =============================
+ */
+.easy-features-available:after {
+  background-color: rgba(157, 230, 232, 0.65);
+}
+/** 
+ * ========================
+ * Employee Section
+ * ========================
+ */
+.employee .employee-body .each-item .detail {
+  color: rgba(255, 255, 255, 0.8);
+}
+.employee .employee-body .each-item .position {
+  color: #9de6e8;
+}
+.employee .employee-body .each-item .name {
+  color: #ffffff;
+}
+/** 
+ * =========================
+ * Features Style 
+ * =========================
+ */
+.features-section {
+  background-color: #ffffff;
+}
+/**
+ * ====================================
+ * Register Form Style
+ * ====================================
+ */
+.register {
+  background-color: #333969;
+}
+.register .section-header .section-heading {
+  color: #ffffff;
+}
+.register .btn-text-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+.register .btn-text-link a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.register .btn-text-link a:hover {
+  color: #ffffff !important;
+}
+.register-form .btn {
+  color: #ffffff;
+}
+.register-form .form-cus {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.register-form .form-cus::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+.register-form .form-cus:-moz-placeholder {
+  color: #ffffff !important;
+}
+.register-form .form-cus::-moz-placeholder {
+  color: #ffffff !important;
+}
+.register-form .form-cus:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+/**
+ * ====================================
+ * Footer Style
+ * ====================================
+ */
+.footer:after {
+  background-color: rgba(157, 230, 232, 0.65);
+}
+.footer p a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer .nav li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer .single-form .form-control {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+.footer .single-form .btn {
+  background-color: #9de6e8;
+}
+.footer .single-form .btn:hover {
+  background-color: #74dbde;
+}
+/**
+ * =======================
+ * Features Section 2
+ * =======================
+ */
+.features-section-2:after {
+  background-color: rgba(157, 230, 232, 0.65);
+}

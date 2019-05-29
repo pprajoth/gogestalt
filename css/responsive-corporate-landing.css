@@ -1,0 +1,230 @@
+@media (max-width: 767px) {
+  /**
+	 * =============================
+	 * Form Defult Style
+	 * =============================
+	 */
+  .single-form .form-control {
+    margin-bottom: 10px;
+    float: none;
+  }
+  .single-form .input-group-btn {
+    display: block;
+    width: 100%;
+  }
+  .single-form .input-group-btn .btn {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .single-form.outer-border .form-control {
+    margin-bottom: 0px !important;
+  }
+  /**
+	 * ================================
+	 * Header Contant Style
+	 * ================================
+	 */
+  .header-body h1 {
+    font-size: 50px;
+    line-height: 72px;
+  }
+  .header-body.section-separator {
+    padding: 110px 0;
+  }
+  .header-body .btn-header .btn {
+    margin-right: 0px;
+  }
+  /**
+	 * ==========================
+	 * How it works Section
+	 * ==========================
+	 */
+  .how-it-works .features,
+  .some-feature-body-image .features {
+    padding-bottom: 85px;
+  }
+  /* Defult Features Style */
+  .features-hover .features-item > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /**
+	 * =============================
+	 * EASY FEATURES AVAILABLE 
+	 * =============================
+	 */
+  .easy-features-available .easy-features-image img {
+    max-width: 100% !important;
+  }
+  .easy-features-available .description-info {
+    padding: 85px 15px;
+  }
+  /**
+	 * ====================================
+	 * Footer Style
+	 * ====================================
+	 */
+  .footer .about-us,
+  .footer .support,
+  .footer .newsletter,
+  .footer .address {
+    display: inline-block;
+    text-align: center;
+  }
+  .footer .logo,
+  .footer .social-icon {
+    display: inline-block;
+  }
+  /**
+	 * ====================================
+	 * Register Form Style
+	 * ====================================
+	 */
+  .register .form-cus {
+    margin-bottom: 15px;
+  }
+  /**
+	 * =======================
+	 * Features Section 2
+	 * =======================
+	 */
+  .features-section-2:after {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+  }
+}
+@media (max-width: 991px) {
+  /**
+	 * ===============================
+	 *   Defult Class Using Text Align Left Important
+	 * ===============================
+	 */
+  .align-left h1,
+  .align-left h2,
+  .align-left h3,
+  .align-left h4,
+  .align-left h5,
+  .align-left h6,
+  .align-left span,
+  .align-left div,
+  .align-left section,
+  .align-left p,
+  .align-left strong,
+  .align-left b,
+  .align-left * {
+    text-align: center !important;
+  }
+  .align-left .section-heading:after {
+    left: 50% !important;
+    margin-left: -25px !important;
+  }
+  .btn-text-link {
+    text-align: center !important;
+  }
+  /**
+	 * ================================
+	 * Header Contant Style
+	 * ================================
+	 */
+  .header-body.section-separator {
+    padding: 85px 0;
+  }
+  .header-body .header-contant-right img {
+    position: relative;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+  }
+  /**
+	 * =============================
+	 * EASY FEATURES AVAILABLE 
+	 * =============================
+	 */
+  .easy-features-available .section-header .section-heading,
+  .easy-features-available .section-header p {
+    text-align: left !important;
+  }
+  .easy-features-available .section-header .section-heading:after,
+  .easy-features-available .section-header p:after {
+    left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .easy-features-available .easy-features-image,
+  .easy-features-available .description-info {
+    display: block;
+    position: relative;
+    z-index: 11;
+  }
+  .easy-features-available .easy-features-image {
+    text-align: center;
+  }
+  .easy-features-available .easy-features-image img {
+    position: relative;
+    max-width: 50%;
+    left: 0 !important;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .easy-features-available .section-separator {
+    padding: 42px 0;
+  }
+  .easy-features-available .section-separator:first-child {
+    padding: 85px 0 42px 0;
+  }
+  .easy-features-available .section-separator:last-child {
+    padding: 42px 0 85px 0;
+  }
+  /**
+	 * ==========================
+	 * How it works Section
+	 * ==========================
+	 */
+  .features {
+    padding-bottom: 85px;
+  }
+  .features .features-item {
+    padding-bottom: 25px;
+  }
+  .features .features-image {
+    text-align: center;
+  }
+  .features .features-image img {
+    display: inline-block;
+    max-height: 100%;
+    margin-left: -80px;
+    bottom: 0px;
+  }
+  /**
+	 * ====================================
+	 * Footer Style
+	 * ====================================
+	 */
+  .footer .about-us,
+  .footer .support,
+  .footer .newsletter {
+    margin-top: 30px;
+  }
+  .footer .logo,
+  .footer .social-icon {
+    display: inline-block;
+  }
+  .footer .about-us,
+  .footer .support,
+  .footer .newsletter,
+  .footer .address {
+    text-align: center;
+  }
+  /**
+	 * =======================
+	 * Features Section 2
+	 * =======================
+	 */
+  .features-section-2 .features-info {
+    margin-top: 50px;
+  }
+}

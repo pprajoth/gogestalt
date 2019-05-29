@@ -1,0 +1,349 @@
+// 
+// VARIABLES 
+//
+// @main-color:        #ECCE52;    // page important color
+// @background:        #fff;        // section background color
+// @background-2:      #F3F4EF;
+// @dark_title_txt:    #000;
+// @light_title_txt:   #fff;
+// @footer-bg:         #18181C;
+
+
+@import "../bootstrap/less/variables.less"; 
+
+@media (max-width: @screen-xs-max) {
+
+	/**
+	 * =============================
+	 * Form Defult Style
+	 * =============================
+	 */
+	.single-form {
+		.form-control {
+		    margin-bottom: 10px;
+		    float: none;
+		}
+		.input-group-btn{
+            display: block;
+            width: 100%;
+
+	        .btn {
+	        	min-width: 100%;
+	        	max-width: 100%;
+	        	width: 100%;
+	        }
+	    }
+
+	    &.outer-border {
+			.form-control {
+			    margin-bottom: 0px !important;
+			}
+	    }
+	}
+
+
+
+	/**
+	 * ================================
+	 * Header Contant Style
+	 * ================================
+	 */
+	.header-body {
+
+		h1 {
+			font-size: 50px;
+			line-height: 72px;
+		}
+
+		&.section-separator {
+		    padding: 110px 0;
+		}
+
+	    .btn-header {
+	        .btn {
+	            margin-right: 0px;
+	        }
+	    }
+	}
+
+
+	/**
+	 * ==========================
+	 * How it works Section
+	 * ==========================
+	 */
+	.how-it-works,
+	.some-feature-body-image {
+		.features {
+			padding-bottom: 85px;
+		}
+	}
+
+	/* Defult Features Style */
+	.features-hover {
+		.features-item {
+
+	        > .row {
+			    margin-left: 0;
+			    margin-right: 0;
+			}
+	    }
+	}
+
+
+
+	/**
+	 * =============================
+	 * EASY FEATURES AVAILABLE 
+	 * =============================
+	 */
+	.easy-features-available {
+	    .easy-features-image {
+	        img {
+	            max-width: 100% !important;
+	        }
+	    }
+
+	    .description-info {
+	    	padding: 85px 15px;
+	    }
+
+	}
+
+
+
+	/**
+	 * ====================================
+	 * Footer Style
+	 * ====================================
+	 */
+	.footer {
+		.about-us,
+		.support,
+		.newsletter,
+		.address {
+			display: inline-block;
+			text-align: center;
+		}
+
+		.logo,
+		.social-icon {
+			display: inline-block;
+		}
+	}
+	
+
+
+	/**
+	 * ====================================
+	 * Register Form Style
+	 * ====================================
+	 */
+	 .register {
+	    
+		.form-cus {
+			margin-bottom: 15px;
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 2
+	 * =======================
+	 */
+
+	.features-section-2 {
+	    &:after {
+	        width: 400px;
+	        height: 400px;
+	        position: absolute;
+	        bottom: -200px;
+	        left: -200px;
+	    }
+	}
+
+	
+}
+
+
+
+
+@media (max-width: @screen-sm-max) {
+
+	
+	/**
+	 * ===============================
+	 *   Defult Class Using Text Align Left Important
+	 * ===============================
+	 */
+	.align-left {
+	    h1,
+	    h2, 
+	    h3,
+	    h4,
+	    h5,
+	    h6,
+	    span,
+	    div,
+	    section,
+	    p,
+	    strong,
+	    b,
+	    * {
+	        text-align: center !important;
+	    }
+
+	    .section-heading:after {
+	        left: 50% !important;
+	        margin-left: -25px !important;
+	    }
+	}
+
+	.btn-text-link {
+		text-align: center !important;
+	}
+
+
+	/**
+	 * ================================
+	 * Header Contant Style
+	 * ================================
+	 */
+
+	.header-body {
+	    &.section-separator {
+	        padding: 85px 0;
+	    }
+
+	    .header-contant-right {
+	        img {
+	            position: relative;
+	            margin-top: 40px;
+	            margin-left: auto;
+	            margin-right: auto;
+	            left: 0;
+	        }
+	    }
+	}
+
+
+	/**
+	 * =============================
+	 * EASY FEATURES AVAILABLE 
+	 * =============================
+	 */
+	.easy-features-available {
+		.section-header {
+			.section-heading,
+	        p {
+	            text-align: left !important;
+
+	            &:after {
+	            	left: 0 !important;
+	            	margin-left: 0 !important;
+	            }
+	        }
+	    }
+
+	    .easy-features-image,
+	    .description-info {
+	        display: block;
+	        position: relative;
+	        z-index: 11;
+	    }
+
+	    .easy-features-image {
+	    	text-align: center;
+
+	        img {
+	            position: relative;
+	            max-width: 50%;
+	            left: 0 !important;
+	            margin: auto;
+	            margin-bottom: 20px;
+	        }
+
+	    }
+
+	    .section-separator {
+	    	padding: 42px 0;
+
+	    	&:first-child {
+	    		padding: 85px 0 42px 0; 
+	    	}
+	    	&:last-child {
+	    		padding: 42px 0 85px 0; 
+	    	}
+	    }
+
+	}
+
+
+	/**
+	 * ==========================
+	 * How it works Section
+	 * ==========================
+	 */
+	.features {
+		padding-bottom: 85px;
+
+	    .features-item {
+	        padding-bottom: 25px;
+	    }
+	    .features-image {
+	        text-align: center;
+
+	        img {
+	        	display: inline-block;
+	    	    max-height: 100%;
+	            margin-left: -80px;
+	            bottom: 0px;
+	        }
+	    }
+	}
+
+
+	/**
+	 * ====================================
+	 * Footer Style
+	 * ====================================
+	 */
+	.footer {
+		.about-us,
+		.support,
+		.newsletter {
+			margin-top: 30px;
+		}
+
+		.logo,
+		.social-icon {
+			display: inline-block;
+		}
+
+		.about-us,
+		.support,
+		.newsletter,
+		.address {
+			text-align: center;
+		}
+	}
+
+
+
+	/**
+	 * =======================
+	 * Features Section 2
+	 * =======================
+	 */
+
+	.features-section-2 {
+	    .features-info {
+	    	margin-top: 50px;
+	    }
+	}
+    
+}
+
+    

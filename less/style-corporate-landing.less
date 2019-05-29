@@ -1,0 +1,1206 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Defult css
+    1.1. Overlay Color CSS / .overlay-color
+    1.2. Background Video Css / .background-video
+    1.3. Section Heading / .section-heading
+    1.4. Section Header / .section-header
+        1.4.1. Section Heading / .section-heading
+        1.4.1. Section Heading Normal / .section-heading-normal
+
+    1.5. Section Separatior / .section-separator
+    1.6. Left Align / .align-left
+    1.7. Defult Button Style / .btn
+        1.7.1. Bckground Color with Border / .btn-fill
+        1.7.2. Only Border / .btn-border
+
+    1.8. Text with link / .btn-text-link
+        1.8.1. Linking Style / a
+
+    1.9. Video Section Style / .background-video
+        -- [ It is only used in Video Background ]
+
+
+    ----------------------------------
+
+1. Body
+    2. Header / #header
+        2.1. Header Contant 
+            2.1.1. Header Background / .header-background
+            2.1.2. Header Style / .header
+
+        3.1. Easy Features Available / #easy-features-available
+            3.1.1. Triangle Shape / .easy-features-available:after
+            3.1.2. Easy Features Image Style / .easy Features Image
+
+
+    
+    
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[ Color codes ]
+    main-color:         #ECCE52 (Yellow)    [ This is the main color in Template ]
+    Background:         #FFFFFF (White)     [ Background color 1 ]
+    Background-2:       #F3F4EF             [ Background color 2 ]
+    light_title_txt:    #FFFFFF;            [ using text color and some ware ]
+    dark_title_txt:     #000;               [ using text color and some ware ]
+
+
+
+[ This Templage Using 8 Different Coller Scheme ]
+    All of the color are same but ( main-color ) is Different.
+
+    main-color:
+    ---------------
+        1. Yellow: #ECCE52;
+        2. Purple: #D869C0;
+        3. Turquoise: #61D2B4;
+        4. Sky Blow: #9DE6E8;
+
+
+
+[ Using Color Code ]
+    h1 [ All ]      Color: #000                         [ Black ]
+    h2 [ Dark ]     Color: rgba(255, 255, 255, 0.9)     [ White ]
+    h2 [ Light ]    Color: rgba(0, 0, 0, 0.9)           [ Black 90% opacity ]
+    p  [ Dark ]     Color: rgba(0, 0, 0, 0.5)           [ White 70% opacity ]
+    p  [ Light ]    Color: rgba(255, 255, 255, 0.7)     [ Black 70% opacity ]
+    a  [ Normal ]   Color: main-color                   [ main-color is changed particular color scheme ]
+    a  [ Hover ]    color: as required                  [  ]
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body : 
+    font-family: 'Exo', sans-serif;
+    font-style:     normal;
+    font-size:      15px;
+
+Header:
+    font-family: 'Exo', sans-serif;
+    font-style:     normal;
+    font-size:      50px;
+
+h1:
+    font-family: 'Exo', sans-serif;
+    font-style:     normal;
+    font-size:      65px;
+
+Section Heading:
+    font-family: 'Exo', sans-serif;
+    font-style:     normal;
+    font-size:      40px;
+
+p:  
+    font-family: 'Exo', sans-serif;
+    font-style:     normal;
+    font-size:      15px;
+
+
+Notes:  This Template Defult [ font-family: 'Exo', sans-serif; ] [ font-style: normal; ] [ font-size: 15px; ]
+
+-------------------------------------------------------------------*/
+
+
+// 
+// VARIABLES 
+//
+@main-color:        #FF6D6D;    // page important color
+@background:        #fff;        // section background color
+@background-2:      #F3F4EF;
+@dark_txt:          #000;
+@light_txt:         #fff;
+@footer-bg:         #18181C;
+
+
+.shadow(text, @a1, @a2, @a3, @a4, @color){
+    text-shadow:            @a1 @a2 @a3 @a4 @color;
+    -moz-text-shadow:       @a1 @a2 @a3 @a4 @color;
+    -webkit-text-shadow:    @a1 @a2 @a3 @a4 @color;
+    -o-text-shadow:         @a1 @a2 @a3 @a4 @color;
+}
+.shadow-important(text, @a1, @a2, @a3, @a4, @color){
+    text-shadow:            @a1 @a2 @a3 @a4 @color !important;
+    -moz-text-shadow:       @a1 @a2 @a3 @a4 @color !important;
+    -webkit-text-shadow:    @a1 @a2 @a3 @a4 @color !important;
+    -o-text-shadow:         @a1 @a2 @a3 @a4 @color !important;
+}
+
+
+.shadow(box, @a1, @a2, @a3, @a4, @color){
+    box-shadow:             @a1 @a2 @a3 @a4 @color;
+    -moz-box-shadow:        @a1 @a2 @a3 @a4 @color;
+    -webkit-box-shadow:     @a1 @a2 @a3 @a4 @color;
+    -o-box-shadow:          @a1 @a2 @a3 @a4 @color;
+}
+.shadow-important( box, @a1, @a2, @a3, @a4, @color ){
+    box-shadow:             @a1 @a2 @a3 @a4 @color !important;
+    -moz-box-shadow:        @a1 @a2 @a3 @a4 @color !important;
+    -webkit-box-shadow:     @a1 @a2 @a3 @a4 @color !important;
+    -o-box-shadow:          @a1 @a2 @a3 @a4 @color !important;
+}
+
+.border-radius( @lu, @ru, @rd, @ld ){
+    border-radius:          @lu @ru @rd @ld;
+    -webkit-border-radius:  @lu @ru @rd @ld;
+    -moz-border-radius:     @lu @ru @rd @ld;
+    -ms-border-radius:      @lu @ru @rd @ld;
+    -o-border-radius:       @lu @ru @rd @ld;
+}
+.border-radius-importent( @lu, @ru, @rd, @ld ){
+    border-radius:          @lu @ru @rd @ld !important;
+    -webkit-border-radius:  @lu @ru @rd @ld !important;
+    -moz-border-radius:     @lu @ru @rd @ld !important;
+    -ms-border-radius:      @lu @ru @rd @ld !important;
+    -o-border-radius:       @lu @ru @rd @ld !important;
+}
+
+.transform( @value ){
+    transform:              rotate(@value);
+    -webkit-transform:      rotate(@value);
+    -moz-transform:         rotate(@value);
+    -o-transform:           rotate(@value);
+}
+
+
+.background-image-fix( @images-name, @repeat ){
+    background-image:             url(@images-name);
+    -webkit-background-size: cover;
+    -moz-background-size:   cover;
+    -o-background-size:     cover;
+    background-size:        cover;
+    background-position: center 0;
+    background-attachment: fixed;
+    background-repeat:      @repeat;
+}
+.background-image( @images-name, @repeat ){
+    background-image:       url(@images-name);
+    background-size:        cover;
+    background-repeat:      @repeat;
+}
+
+.transition( @value ){
+    -webkit-transition: all @value ease-out;
+    -moz-transition: all @value ease-out;
+    -o-transition: all @value ease-out;
+    -ms-transition: all @value ease-out;
+    transition: all @value ease-out;
+}
+
+
+// INPUT FORM PLACEHOLDER COLOR   
+.placeholder-color( @value ) {
+    &::-webkit-input-placeholder {
+        color: @value !important;
+    }
+    &:-moz-placeholder {
+        color: @value !important;
+    }
+    &::-moz-placeholder {
+        color: @value !important;
+    }
+    &:-ms-input-placeholder {
+        color: @value !important;
+    }
+}
+
+.center(@value) {
+    display:                flex;
+   -webkit-flex-direction:  row; /* works with row or column */
+   flex-direction:          row;
+   -webkit-align-items:     center;
+   align-items:             center;
+   -webkit-justify-content: center;
+   justify-content:         center;
+}
+
+
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+html * {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    font-style: normal;
+    font-size:          15px;
+    font-style:         none;
+    line-height:        26px;
+    font-weight:        300;
+    overflow-x:         hidden !important;
+
+}
+
+a{
+    text-decoration:    none !important;
+    cursor:             pointer !important;
+    .transition(0.3s);
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.fix{
+    overflow:           hidden;
+}
+
+p{
+    font-family: 'Exo', sans-serif;
+    font-size:          15px;
+    line-height:        28px;
+    font-weight:        700;
+}
+
+h1{
+    font-size:          65px;
+    line-height:        90px;
+    font-weight:        100;
+}
+
+h2{
+    font-size:          35px;
+    line-height:        52px;
+    font-weight:        300;
+}
+
+h3{
+    font-size:          25px;
+    line-height:        42px;
+    font-weight:        300;
+}
+
+h4{
+    font-size: 17px;
+    line-height: 28px
+}
+
+.overlay-color {
+    background-color: fade(#2F3034, 93%);
+}
+
+/* Video Background */
+.background-video {
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: url(../video/event-video.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+
+/**
+ * ===============================
+ *  Section Heading Section Defult Style 
+ * ===============================
+ */
+.section-heading {
+    font-family: 'Exo', sans-serif;
+    position: relative;
+    padding-bottom: 0px;
+    margin: 0 0 20px;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+.section-header {
+
+    .important {
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .section-heading {
+        text-align: center;
+
+        .end-heading {
+        }
+    }
+
+    .section-heading-normal {
+        line-height: 40px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+
+
+/**
+ * ===============================
+ *  Section Top and Bottom padding  
+ * ===============================
+ */
+.section-separator {
+    display: block;
+    padding: 85px 0;
+}
+
+
+
+/**
+ * ===============================
+ *   Defult Class Using Text Align Left Important
+ * ===============================
+ */
+.align-left {
+    h1,
+    h2, 
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    div,
+    section,
+    p,
+    strong,
+    b,
+    * {
+        text-align: left !important;
+    }
+
+    .section-heading:after {
+        left: 0 !important;
+        margin-left: 0px !important;
+    }
+}
+.align-center {
+    h1,
+    h2, 
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    div,
+    section,
+    p,
+    strong,
+    b,
+    * {
+        text-align: center !important;
+    }
+
+    .section-heading:after {
+        left: 50% !important;
+        margin-left: -25px !important;
+    }
+}
+
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+    font-family: 'Exo', sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 11px 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    outline: 0;
+    position: relative;
+    min-width: 120px;
+    .transition(.4s);
+
+    
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+    }
+
+    .fa {
+        padding: 3px 3px 3px 6px;
+        border: 0px solid transparent !important;
+        font-size: 28px !important;
+        position: relative;
+        top: 4px;
+        .transition(.4s);
+    }
+
+    &.btn-icon {
+        padding: 8px 65px 15px 65px;
+
+        .fa-left {
+            right: 18px;
+        }
+        .fa-right {
+            left: 18px;
+        }
+    }
+
+    &.btn-fill {
+        color: #000;
+
+        .fa {
+            color: #000;
+            border-color: #000;
+        }
+
+        &:hover {
+
+            .fa {
+                color: #fff;
+                border-color: #fff;
+            }
+        }
+    }
+
+    &.btn-border {
+        background-color: transparent;
+        color: #fff;
+
+        .fa {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        &:hover {
+            color: #000;
+
+            .fa {
+                color: #000;
+                border-color: #000;
+            }
+        }
+    }
+}
+
+
+
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color !important;
+    outline-offset: -2px;
+}
+
+.btn-text-link {
+    padding: 40px 0 0 0;
+    text-align: center;
+    font-weight: 300;
+
+    a {
+    }
+}
+
+
+
+/**
+ * =============================
+ * Form Defult Style
+ * =============================
+ */
+.single-form {
+    .input-group {
+        font-weight: 300;
+        padding: 2px;
+        width: 100%;
+
+        .form-control {
+            .border-radius(0,0,0,0);
+            padding: 0 30px;
+            border: 1px solid #2F3033;
+            background-color: transparent;
+            color: #2F3033;
+            letter-spacing: 2px;
+
+            &:hover {
+                color: #2F3033 !important;
+            }
+
+            &:focus {
+                .shadow(box, 0, 0, 0, 0, rgba(0, 0, 0, 0.2));
+            }
+        }
+        .form-control,
+        .btn {
+            height: 48px;
+            font-size: 15px;
+        }
+        .btn {
+            background-color: #2F3034;
+            color: #fff;
+            padding: 0 90px;
+
+            &:hover {
+            }
+        }
+    }
+}
+
+.outer-border {
+    &.single-form {
+        .input-group {
+            border: 1px solid fade(#fff, 50%);
+
+            .form-control,
+            .btn {
+                height: 50px;
+            }
+
+            .form-control {
+                border: 0px solid transparent;
+            }
+
+            .btn {
+                padding: 0 44px;
+                padding: 0 35px;
+                min-width: 150px;
+                color: #000;
+            }
+        }
+    }
+}
+
+
+
+
+/**
+ * ================================
+ * Header Contant Style
+ * ================================
+ */
+
+
+/*  Header Contant Style  */
+/*  ====================  */
+
+
+.header-background {
+    background-color: fade(#222222, 99%);
+    .background-image-fix( '../images/bg-3.jpg', no-repeat );
+
+}
+
+.header {
+    .overlay-color {
+    }
+    .overlay-color-video {
+    }
+}
+
+.header-body {
+    &.section-separator {
+        padding: 200px 0;
+    }
+    
+    h1 {
+        text-align: center;
+
+        span {
+            display: inline-block;
+        }
+    }
+    .requirement {
+        margin-top: 20px; 
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            margin: 0;
+            line-height: 22px;
+        }
+    }
+
+    .btn-header {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        .btn-video {
+            .fa {
+                font-size: 55px;
+                color: #fff;
+            }
+
+            img {
+                max-width: 60px;
+                width: 60px;
+            }
+        }
+    }
+
+    .btn-text-link {
+        color: fade(#fff, 50%);
+    }
+
+    .btn {
+    }
+
+}
+
+
+
+/**
+ * =============================
+ * EASY FEATURES AVAILABLE 
+ * =============================
+ */
+.easy-features-available {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        content: '';
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        bottom: -300px;
+        right: -300px;
+        transform: rotate(-45deg);
+    }
+
+    .easy-features-image,
+    .description-info {
+        float: left !important;
+        display: table-cell;
+    }
+
+    .easy-features-image {
+        img {
+            max-width: none;
+            position: absolute;
+            width: 100%;
+            right: 0px;
+            bottom: 0;
+        }
+
+        &.image-left img {
+            left: 0;
+            top: 0;
+        }
+
+        &.image-right img {
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.full-screen {
+    display: table !important;
+
+    .full-screen-1,
+    .full-screen-2 {
+        display: table-cell;
+        float: none !important;
+    }
+
+    .full-screen-1 {
+        padding: 160px 85px;
+    }
+}
+
+
+
+/**
+ * =======================
+ * Features Section 2
+ * =======================
+ */
+
+.features-section-2 {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        width: 800px;
+        height: 800px;
+        position: absolute;
+        bottom: -400px;
+        left: -400px;
+        transform: rotate(-45deg);
+    }
+
+    .features-image,
+    .features-info {
+        position: relative;
+        z-index: 11;
+    }
+}
+
+
+
+
+/**
+ * ==========================
+ * How it works Section
+ * ==========================
+ */
+.how-it-works-bg {
+    .background-image( '../images/bg-4.jpg', no-repeat );
+}
+
+.how-it-works {
+    overflow: hidden;
+
+    .section-header {
+        padding-top: 85px;
+    }
+}
+
+/* Features Defu ltStyle */
+.features {
+    margin-top: 45px;
+    overflow: hidden;
+
+    .each-item {
+        text-align: center;
+        padding: 35px 15px 15px 15px;
+        .transition(0.4s);
+
+        h4 {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 29px 0 13px 0;
+            color: #000;
+            .transition(0.4s);
+        }
+
+        .features-icon {
+            width: 75px;
+            height: 75px;
+            background-image: url('../icons/png-icon/icon.png');
+            background-repeat: no-repeat;
+            display: block;
+            text-indent: -9999999px;
+            margin: auto;
+        }
+
+        .fa {
+            font-size: 37px;
+            padding: 22px 25px;
+            border-radius: 50%;
+            background-color: transparent;
+            position: relative;
+            z-index: 2;
+            .transition(0.4s);
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                border-radius: 50%;
+                z-index: -1;
+                border: 1px solid #EEEEEE;
+                transform: scale(1);
+                .transition(0.4s);
+            }
+        }
+
+        .icon {
+            padding: 22px 23px;
+            font-size: 35px;
+        }
+
+        &:nth-of-type(0) {
+            .features-icon {
+                background-position: 0;
+            }
+        }
+        &:nth-of-type(1){
+            .features-icon {
+                background-position: -75px;
+            }
+        }
+        &:nth-of-type(2) {
+            .features-icon{
+                background-position: -150px;
+            }
+        }
+    }
+
+    .features-item {
+        padding-bottom: 85px;
+    }
+
+    .features-image {
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+.features-hover {
+    .each-item {
+        &:hover {
+            .shadow(box, 0, 5px, 65px, 0, rgba(0, 0, 0, 0.15));
+            cursor: pointer;
+
+            .fa {
+                color: #fff !important;
+
+                &:after {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+/** 
+ * ========================
+ * Employee Section
+ * ========================
+ */
+ .employee-bg {
+    background-image: url('../images/bg-5.gif');
+    background-repeat: repeat;
+ }
+
+ .employee {
+    .employee-body {
+        .each-item {
+            text-align: center;
+            padding: 25px;
+
+            span {
+                display: block;
+                position: relative;
+            }
+
+            .detail {
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+
+            .position {
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 25px;
+                margin: 0 0 20px 0;
+            }
+
+            .name {
+                font-size: 22px;
+                letter-spacing: 1px;
+                font-weight: 400;
+                line-height: 35px;
+                margin: 20px 0 0 0;
+            }
+
+            img {
+                width: 70px;
+                height: auto;
+            }
+
+        }
+    }
+
+    .partner {
+        margin-top: 40px;
+
+        ul {
+            li {
+                float: left;
+
+                a {
+                    background-color: transparent;        
+                    text-align: center;
+                    opacity: 0.6;
+
+                    &:hover {
+                        background-color: transparent;
+                        opacity: 0.8;
+                    }
+                    
+                    img {
+                        max-width: 100% !important;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+
+
+
+/** 
+ * =========================
+ * Features Style 
+ * =========================
+ */
+
+.features-section {
+    margin-top: 85px;
+
+    .features-images {
+        margin-top: 45px;
+
+        img {
+            position: relative;
+            bottom: 0;
+        }
+    }
+}
+
+
+
+/**
+ * ====================================
+ * Register Form Style
+ * ====================================
+ */
+ .register {
+
+    .section-header {
+        .section-heading {
+        }
+    }
+
+    .btn-text-link {
+        a {
+            text-decoration: underline !important;
+
+            &:hover {
+            }
+        }
+    }
+
+    img.get-free-trial {
+        position: absolute;
+        top: -51px;
+        z-index: 11;
+    }
+ }
+
+.form-cus {
+    font-style: normal;
+    padding: 9px 23px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    height: 48px;
+    border-radius: 3px !important;
+    letter-spacing: 1px;
+
+    &:hover {
+        color: #fff !important;
+    }
+    
+    &:focus {
+        .shadow(box, 0, 0, 0, 0, rgba(0, 0, 0, 0.2));
+        border-color: #fff;
+    }
+}
+
+.register-form{
+    display: block;
+    margin-top: 80px;
+
+    .btn {
+        width: 100%;
+        padding: 11px;
+        font-size: 17px;
+    }
+
+    .form-cus {
+
+    }
+
+}
+
+
+
+/**
+ * ====================================
+ * Footer Style
+ * ====================================
+ */
+.footer {
+    position: relative;
+    overflow: hidden;
+
+    .about-us,
+    .support,
+    .newsletter,
+    .address {
+        position: relative;
+        z-index: 11;
+    }
+
+    &:after {
+        content: '';
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        transform: rotate(-45deg);
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0;
+
+        a {
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    h3 {
+        line-height: 31px;
+        margin-top: 0px;
+        font-weight: 500;
+    }
+
+    .nav {
+        li {
+            a {
+                padding: 2px 0;
+                font-weight: 700;
+                background-color: transparent;;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+
+    .single-form{
+        margin-top: 10px;
+
+        .form-control {
+            border-right-color: 0px solid transparent;
+            border-radius: 3px 0 0 3px;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        .btn { 
+            border-radius: 0 3px 3px 0;
+            min-width: 60px;
+            padding: 0;
+
+            &:hover {
+            }
+
+            .fa {
+                font-size: 22px !important;
+                top: 0px;
+            }
+        }
+    }
+
+    .social-icon {
+        margin-top: 20px;
+
+        li {
+            list-style: none;
+            float: left;
+
+            a {
+                font-size: 20px;
+                height: 25px;
+                width: 25px;
+                text-align: center;
+                margin-right: 15px;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &:last-child {
+                a {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+ * ===============================
+ * Subscription and contact  "MESSAGE"
+ * ===============================
+ */
+.message {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.subscription-success, 
+.subscription-failed, 
+.email-success, 
+.email-failed{
+    font-size: 14px;
+    font-style: normal;
+    display: none;
+    text-align: left !important;
+    margin: 0 0 0 0 !important;
+}
+
+.subscription-success, 
+.subscription-failed {
+}
+
+.subscription-failed, .email-failed{
+    color: #E04343 !important;
+}

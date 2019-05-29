@@ -1,0 +1,335 @@
+// 
+// VARIABLES 
+//
+@main-color:        #D869C0;    // page important color
+@background:        #fff;        // section background color
+@background-2:      #F3F4EF;
+@dark_txt:          #000;
+@light_txt:         #fff;
+@footer-bg:         #18181C;
+
+
+
+// Less Function
+// INPUT FORM PLACEHOLDER COLOR   
+.placeholder-color( @value ) {
+    &::-webkit-input-placeholder {
+        color: @value !important;
+    }
+    &:-moz-placeholder {
+        color: @value !important;
+    }
+    &::-moz-placeholder {
+        color: @value !important;
+    }
+    &:-ms-input-placeholder {
+        color: @value !important;
+    }
+}
+
+/**
+ * ===============================
+ *  Defult CSS 
+ * ===============================
+ */
+p{
+    color: fade(@dark_txt, 50%);
+}
+
+
+
+/**
+ * ===============================
+ *  Section Heading Section Defult Style 
+ * ===============================
+ */
+.section-heading {
+    color: fade(@dark_txt, 90%);
+
+    .end-heading {
+        color: @main-color;
+    }
+}
+.section-header {
+    .important {
+        color: @main-color;
+    }
+    .section-heading-normal {
+        color: fade(@dark_txt, 80%);
+    }
+
+    p {
+        color: fade(@dark_txt, 50%);
+    }
+}
+
+
+
+/**
+ * ===============================
+ *   Defult Button Style
+ * ===============================
+ */
+.btn {
+
+    &.btn-fill {
+        background-color: @main-color;
+        border-color: @main-color;
+
+        &:hover {
+            background-color: darken(@main-color, 15%) !important;
+            border-color: darken(@main-color, 15%) !important;
+        }
+    }
+
+    &.btn-border {
+        border-color: @main-color;
+
+        &:hover {
+            background-color: @main-color;
+        }
+    }
+}
+
+
+.btn-text-link {
+    a {
+        color: @main-color;
+
+        &:hover {
+            color: darken(@main-color, 15%) !important;
+        }
+    }
+}
+
+
+
+/**
+ * =============================
+ * Form Defult Style
+ * =============================
+ */
+.single-form {
+    .input-group {
+        .btn {
+            &:hover {
+                background-color: darken(@main-color, 15%) !important;
+            }
+        }
+    }
+}
+
+.outer-border {
+    &.single-form {
+        .input-group {
+            .btn {
+                background-color: @main-color;
+            }
+        }
+    }
+}
+
+.overlay-color {
+    background-color: fade(#2F3034, 93%);
+}
+
+
+/**
+ * ================================
+ * Header Contant Style
+ * ================================
+ */
+
+
+/*  Header Contant Style  */
+/*  ====================  */
+
+
+.header-background {
+    background-color: fade(#222222, 99%);
+}
+
+.header {
+    .overlay-color {
+        background-color: fade(#2F3034, 30%);
+    }
+    .overlay-color-video {
+        background-color: fade(#2F3034, 30%);
+    }
+}
+
+.header-body {
+    h1 {
+        color: @dark_txt;
+    }
+    .requirement {
+        p {
+            color: fade(@dark_txt, 35%);
+        }
+    }
+
+    .btn-header {
+        color: @light_txt;
+    }
+
+    .btn-text-link {
+        color: fade(#fff, 50%);
+    }
+
+    .btn {
+        color: @light_txt;
+    }
+
+}
+
+
+
+/**
+ * =============================
+ * EASY FEATURES AVAILABLE 
+ * =============================
+ */
+.easy-features-available {
+    &:after {
+        background-color: fade(@main-color, 65%);
+    }
+}
+
+
+
+/** 
+ * ========================
+ * Employee Section
+ * ========================
+ */
+ .employee {
+    .employee-body {
+        .each-item {
+            .detail {
+                color: fade(@light_txt, 80%);
+            }
+
+            .position {
+                color: @main-color;
+            }
+
+            .name {
+                color: @light_txt;
+            }
+
+        }
+    }
+ }
+
+
+
+
+
+/** 
+ * =========================
+ * Features Style 
+ * =========================
+ */
+
+.features-section {
+    background-color: @light_txt;
+}
+
+
+
+/**
+ * ====================================
+ * Register Form Style
+ * ====================================
+ */
+ .register {
+    background-color: #333969;
+
+    .section-header {
+        .section-heading {
+            color: @light_txt;
+        }
+    }
+
+    .btn-text-link {
+        color: fade(@light_txt, 70%);
+
+        a {
+            color: fade(@light_txt, 70%);
+
+            &:hover {
+                color: @light_txt !important;
+            }
+        }
+    }
+ }
+
+.register-form{
+    .btn {
+        color: @light_txt;
+    }
+
+    .form-cus {
+        .placeholder-color(#fff);
+        background-color: fade(@light_txt, 8%);
+        border-color: fade(@light_txt, 50%)
+
+    }
+
+}
+
+
+
+/**
+ * ====================================
+ * Footer Style
+ * ====================================
+ */
+.footer {
+
+    &:after {
+        background-color: fade(@main-color, 65%);
+    }
+
+    p {
+        a {
+            color: fade(@dark_txt, 50%);
+        }
+    }
+
+    .nav {
+        li {
+            a {
+                color: fade(@dark_txt, 50%);
+            }
+        }
+    }
+
+    .single-form{
+        .form-control {
+            border-color: fade(@dark_txt, 25%);
+        }
+
+        .btn {
+            background-color: @main-color;
+
+            &:hover {
+                background-color: darken(@main-color, 10%)
+            }
+        }
+    }
+}
+
+
+/**
+ * =======================
+ * Features Section 2
+ * =======================
+ */
+
+.features-section-2 {
+    &:after {
+        background-color: fade(@main-color, 65%);
+    }
+}
+
