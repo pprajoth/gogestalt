@@ -165,6 +165,9 @@ h4 {
   font-size: 17px;
   line-height: 28px;
 }
+.blog-post {
+  color: black !important;
+}
 .four-attributes {
   font-weight: 700;
   font-size: 18px;
