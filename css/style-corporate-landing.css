@@ -677,6 +677,16 @@ h4 {
 
 }
 
+.team-pic {
+  width: 300px !important; 
+  height:300px !important; 
+  position: absolute !important; 
+  left: 50% !important; 
+  top: 50% !important; 
+  transform: translate(-50%, -55%) !important; 
+  margin:auto;
+}
+
 .easy-features-available .easy-features-image,
 .easy-features-available .description-info {
   float: left !important;
