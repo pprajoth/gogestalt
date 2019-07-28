@@ -949,7 +949,17 @@ h4 {
   font-weight: 400;
   line-height: 35px;
   margin: 20px 0 0 0;
+  text-decoration: none;
 }
+.employee .employee-body .each-item .name:hover {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 35px;
+  margin: 20px 0 0 0;
+  text-decoration: underline;
+}
+
 .employee .employee-body .each-item img {
   width: 70px;
   height: auto;
@@ -1129,7 +1139,7 @@ li {
   transform: rotate(-45deg);
 }
 .footer .logo {
-  width: 100px;
+  height: 55px;
   margin-bottom: 10px;
 }
 .footer p {
