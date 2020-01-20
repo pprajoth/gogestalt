@@ -26,7 +26,7 @@
 
 1. Body
     2. Header / #header
-        2.1. Header Contant 
+        2.1. Header Contant
             2.1.1. Header Background / .header-background
             2.1.2. Header Style / .header
 
@@ -35,8 +35,8 @@
             3.1.2. Easy Features Image Style / .easy Features Image
 
 
-    
-    
+
+
 
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -74,7 +74,7 @@
 /*------------------------------------------------------------------
 [Typography]
 
-Body : 
+Body :
     font-family: 'Exo', sans-serif;
     font-style:     normal;
     font-size:      16px;
@@ -94,7 +94,7 @@ Section Heading:
     font-style:     normal;
     font-size:      40px;
 
-p:  
+p:
     font-family: 'Exo', sans-serif;
     font-style:     normal;
     font-size:      15px;
@@ -105,7 +105,7 @@ Notes:  This Template Defult [ font-family: 'Exo', sans-serif; ] [ font-style: n
 -------------------------------------------------------------------*/
 /**
  * ===============================
- *  Defult CSS 
+ *  Defult CSS
  * ===============================
  */
 html * {
@@ -198,7 +198,7 @@ h4 {
 }
 /**
  * ===============================
- *  Section Heading Section Defult Style 
+ *  Section Heading Section Defult Style
  * ===============================
  */
 .section-heading {
@@ -244,7 +244,7 @@ h4 {
 }
 /**
  * ===============================
- *  Section Top and Bottom padding  
+ *  Section Top and Bottom padding
  * ===============================
  */
 .section-separator {
@@ -447,7 +447,7 @@ h4 {
 
 /**
  * ================================
- * Navbar Style 
+ * Navbar Style
  * ================================
  */
 .header-nav {
@@ -643,7 +643,7 @@ h4 {
 }
 /**
  * =============================
- * EASY FEATURES AVAILABLE 
+ * EASY FEATURES AVAILABLE
  * =============================
  */
 .easy-features-available {
@@ -651,7 +651,7 @@ h4 {
   position: relative;
 }
 .easy-features-available:after {
-   
+
   content: '';
   /*
   width: 600px;
@@ -678,12 +678,12 @@ h4 {
 }
 
 .team-pic {
-  width: 300px !important; 
-  height:300px !important; 
-  position: absolute !important; 
-  left: 50% !important; 
-  top: 50% !important; 
-  transform: translate(-50%, -55%) !important; 
+  width: 300px !important;
+  height:300px !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -55%) !important;
   margin:auto;
 }
 
@@ -906,7 +906,7 @@ h4 {
 .features-hover .each-item:hover .fa:after {
   transform: scale(1.15);
 }
-/** 
+/**
  * ========================
  * Employee Section
  * ========================
@@ -987,9 +987,9 @@ h4 {
   max-width: 100% !important;
   margin: auto;
 }
-/** 
+/**
  * =========================
- * Features Style 
+ * Features Style
  * =========================
  */
 .features-section {
@@ -1014,10 +1014,10 @@ li {
 }
 
 .first-section-quarter {
-  background: 
-    /* top, transparent red, faked with gradient */ 
+  background:
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(105, 10, 10, 0.2), 
+      rgba(105, 10, 10, 0.2),
       rgba(105, 10, 10, 0.2)
     ),
     /* bottom, image */
@@ -1029,10 +1029,10 @@ li {
 }
 
 .second-section-quarter {
-  background: 
-    /* top, transparent red, faked with gradient */ 
+  background:
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(105, 10, 10, 0.2), 
+      rgba(105, 10, 10, 0.2),
       rgba(105, 10, 10, 0.2)
     ),
     /* bottom, image */
@@ -1043,10 +1043,10 @@ li {
 }
 
 .third-section-quarter {
-  background: 
-    /* top, transparent red, faked with gradient */ 
+  background:
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(105, 10, 10, 0.2), 
+      rgba(105, 10, 10, 0.2),
       rgba(105, 10, 10, 0.2)
     ),
     /* bottom, image */
@@ -1056,10 +1056,10 @@ li {
 }
 
 .fourth-section-quarter {
-  background: 
-    /* top, transparent red, faked with gradient */ 
+  background:
+    /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(105, 10, 10, 0.2), 
+      rgba(105, 10, 10, 0.2),
       rgba(105, 10, 10, 0.2)
     ),
     /* bottom, image */
